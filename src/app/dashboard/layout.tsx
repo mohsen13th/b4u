@@ -1,5 +1,5 @@
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
+import Header from "@/features/dashboard/layout/Header";
+import Footer from "@/features/dashboard/layout/Footer";
 
 function layout({
   children,

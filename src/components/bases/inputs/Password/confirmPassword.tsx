@@ -16,6 +16,7 @@ const ConfirmPasswordInput = <T extends FieldValues>({
   placeholder = " ",
   disabled,
   className,
+  labelClassName,
 }: SimpleInputProps<T>) => {
   const [show, setShow] = useState(false);
   const { watch, setError, clearErrors } = useFormContext();
@@ -30,7 +31,7 @@ const ConfirmPasswordInput = <T extends FieldValues>({
   return (
     <div className="flex flex-col gap-1 relative">
       {label && (
-        <Label className="text-right pr-1 mb-1" htmlFor={name}>
+        <Label className={cn("text-right pr-1 mb-1 font-extralight", labelClassName)} htmlFor={name}>
           {label}
         </Label>
       )}
@@ -52,10 +53,10 @@ const ConfirmPasswordInput = <T extends FieldValues>({
                   field.onChange(val);
                 }}
                 onBlur={handleBlur}
-                className={cn(
+                className={cn(" font-iransans text-xs bg-white",
                   className,
                   fieldState.error
-                    ? "border-destructive focus-visible:ring-destructive"
+                    ? "border-destructive focus-visible:border-destructive"
                     : "border-input",
                   "appearance-none input-hide-ms-reveal",
                   show ? "input-text-security-shown" : "input-text-security-hidden",
@@ -65,7 +66,7 @@ const ConfirmPasswordInput = <T extends FieldValues>({
               <button
                 type="button"
                 onClick={() => setShow(!show)}
-                className="absolute top-[40px] left-3 -translate-y-1/2"
+                className="absolute top-10 left-3 -translate-y-1/2"
               >
                 {show ? (
                   <EyeOff className="h-4 w-4 text-gray-500" />
@@ -74,7 +75,7 @@ const ConfirmPasswordInput = <T extends FieldValues>({
                 )}
               </button>
 
-              <div className="text-destructive text-xs mb-3 flex items-center gap-1 min-h-[20px]">
+              <div className="text-destructive text-xs mb-3 flex items-center gap-1 min-h-5">
                 {fieldState.error && (
                   <>
                     <span className="pr-1">{fieldState.error.message}</span>

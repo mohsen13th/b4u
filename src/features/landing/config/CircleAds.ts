@@ -1,0 +1,16 @@
+export const circleAds = [
+  { id: 1, image: "/images/entekhabMan.png", link: "https://www.entekhabeman.com/" },
+  { id: 2, image: "/images/entekhabService.png", link: "https://www.entekhabservice.com/" },
+  { id: 3, image: "/images/snowa.jpg", link: "https://snowa.ir/" },
+  { id: 4, image: "/images/daewoo.jpg", link: "https://daewoo.ir/" },
+  { id: 5, image: "/images/ardesia.png", link: "https://ardesia.com/" },
+  { id: 6, image: "/images/bost.png", link: "https://bost.ir/" },
+  { id: 7, image: "/images/tecnogas.png", link: "https://tecnogas.ir/" },
+  { id: 8, image: "/images/baSalam.png", link: "https://basalam.com/" },
+  { id: 9, image: "/images/spart.png", link: "https://espartstore.com/?utm_source=eforu&utm_medium=web-homepage&utm_campaign=integration" },
+  { id: 10, image: "/images/dal.png", link: "https://daal.co/" },
+  { id: 11, image: "/images/dekaPost.png", link: "https://dekapost.com/" },
+  { id: 12, image: "/images/dekatrip.png", link: "https://dekatrip.com/" },
+  { id: 13, image: "/images/moneySa.png", link: "https://moneysa.ir/" },
+  { id: 14, image: "/images/fixs.png", link: "https://fixa24.com/" },
+];

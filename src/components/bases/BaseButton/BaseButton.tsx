@@ -30,7 +30,7 @@ const BaseButton = ({
   return (
     <ShadButton
       className={cn(
-        "rounded-lg font-medium transition flex items-center justify-center gap-2",
+        "rounded-lg font-extralight transition flex items-center justify-center gap-2",
         variantButton ? variantClasses[variantButton] : "",
         sizeButton ? sizeClasses[sizeButton] : "",
         className,

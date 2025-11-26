@@ -51,6 +51,10 @@ export const useInputValidation = (type?: InputType) => {
           value = value.replace(/^\s+/, "");
           break;
 
+          case "username":
+          value = value.replace(/[^a-zA-Z]/g, "");
+          break;
+
         case "password":
         case "date":
         case "time":

@@ -17,13 +17,14 @@ const SimpleInput = <T extends FieldValues>({
   disabled,
   className,
   validationType,
+  labelClassName,
 }: SimpleInputProps<T> & { validationType?: ValidationType }) => {
   const validation = useInputValidation(validationType || "text");
 
   return (
     <div className="flex flex-col gap-1">
       {label && (
-        <Label className="text-right pr-1 mb-1" htmlFor={name}>
+        <Label className={cn("text-right pr-1 mb-1 font-extralight", labelClassName)} htmlFor={name}>
           {label}
         </Label>
       )}
@@ -42,15 +43,15 @@ const SimpleInput = <T extends FieldValues>({
               onBlur={() => field.onBlur()}
               onInput={(e) => validation.onInput?.(e)}
               onKeyDown={(e) => validation.onKeyDown?.(e)}
-              className={cn(
+              className={cn("font-iransans text-xs bg-white",
                 className,
                 fieldState.error
-                  ? "border-destructive focus-visible:ring-destructive"
+                  ? "border-destructive focus-visible:border-destructive"
                   : "border-input",
               )}
             />
 
-            <div className="text-destructive text-xs mb-3 flex items-center gap-1 min-h-[20px]">
+            <div className="text-destructive text-xs mb-3 flex items-center gap-1 min-h-5">
               {fieldState.error && (
                 <>
                   <span className="pr-1">{fieldState.error.message}</span>
