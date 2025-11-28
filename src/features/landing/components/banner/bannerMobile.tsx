@@ -18,15 +18,15 @@ import Image from "next/image";
 
 const bannerItem = [
   { siteBannerId:1,link: "#", imageUrl: "/1.mobile.8d1d338d.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "#", imageUrl: "/2-mobile.7611ff7a.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "#", imageUrl: "/3-mobile.8e2e454e.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "#", imageUrl: "/6-mobile.68529dbc.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "https://www.eforu.ir/festival", imageUrl: "/7-mobile.cf106243.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "#", imageUrl: "/8-mobile.8b1631e3.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "https://basalam.com/", imageUrl: "/baSalamMobile.c31012f8.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "#", imageUrl: "/dall-mobile.79013e7a.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "#", imageUrl: "/lottery-autumn-mobile.2ef7a248.jpg", description: "بنر سایت" },
-  { siteBannerId:1,link: "#", imageUrl: "/slidermobile.6cd81fae.jpg", description: "بنر سایت" },
+  { siteBannerId:2,link: "#", imageUrl: "/2-mobile.7611ff7a.jpg", description: "بنر سایت" },
+  { siteBannerId:3,link: "#", imageUrl: "/3-mobile.8e2e454e.jpg", description: "بنر سایت" },
+  { siteBannerId:4,link: "#", imageUrl: "/6-mobile.68529dbc.jpg", description: "بنر سایت" },
+  { siteBannerId:5,link: "https://www.eforu.ir/festival", imageUrl: "/7-mobile.cf106243.jpg", description: "بنر سایت" },
+  { siteBannerId:6,link: "#", imageUrl: "/8-mobile.8b1631e3.jpg", description: "بنر سایت" },
+  { siteBannerId:7,link: "https://basalam.com/", imageUrl: "/baSalamMobile.c31012f8.jpg", description: "بنر سایت" },
+  { siteBannerId:8,link: "#", imageUrl: "/dall-mobile.79013e7a.jpg", description: "بنر سایت" },
+  { siteBannerId:9,link: "#", imageUrl: "/lottery-autumn-mobile.2ef7a248.jpg", description: "بنر سایت" },
+  { siteBannerId:10,link: "#", imageUrl: "/slidermobile.6cd81fae.jpg", description: "بنر سایت" },
 ];
 
 const BannerMobile = () => {
