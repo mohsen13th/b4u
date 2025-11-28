@@ -1,5 +1,6 @@
 import AppBox from "@/features/landing/components/appBox/appBox";
-import BannerSlider from "@/features/landing/components/banner/bannerSlider";
+// import BannerSlider from "@/features/landing/components/banner/bannerSlider";
+import Banner from "@/features/landing/components/banner/banner";
 import CircleAdsSlider from "@/features/landing/components/circleAds/circleAdsSlider";
 import EntekhabAds from "@/features/landing/components/entekhabAds/entekhabAds";
 import GameSelect from "@/features/landing/components/gameSelect/gameSelect";
@@ -9,7 +10,7 @@ import ShortcutPanel from "@/features/landing/components/shortcutPanel/shortcutP
 const LandingPage = () => {
   return (
     <div className="relative">
-      <BannerSlider />
+      <Banner />
       <div className="container mx-auto px-4">
         <RewardsSlider />
         <GameSelect />
